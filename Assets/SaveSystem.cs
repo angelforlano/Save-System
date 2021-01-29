@@ -9,9 +9,19 @@ public class SaveSystem : MonoBehaviour
     const string fileName = "/gameData.data";
     public GameData gameData = new GameData();
 
+    public static SaveSystem Instance;
+
     void Awake()
     {
         Load();
+
+        if(Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        } else {
+            Destroy(gameObject);
+        }
     }
 
     void Update()
@@ -78,5 +88,10 @@ public class SaveSystem : MonoBehaviour
         stream.Close();
 
         Debug.Log("New Game Created!");
+    }
+
+    public GameData GetGameData()
+    {
+        return gameData;
     }
 }
