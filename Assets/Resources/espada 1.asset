@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ff0b76e8a4bc1447be9fd3541f8202e, type: 3}
+  m_Name: espada 1
+  m_EditorClassIdentifier: 
+  itemName: Espada 2
+  itemDesc: Espada de Hierro
+  price: 100
+  model: {fileID: 0}
+  itemIcon: {fileID: 21300000, guid: afbf484c6583f334f98047e6ecd71c52, type: 3}
